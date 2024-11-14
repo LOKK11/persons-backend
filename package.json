@@ -1,5 +1,5 @@
 {
-  "name": "full-stack-open-part3",
+  "name": "persons-backend",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -13,7 +13,7 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.21.1",
-    "full-stack-open-part3": "file:"
+    "persons-backend": "file:"
   },
   "devDependencies": {
     "morgan": "^1.10.0",
