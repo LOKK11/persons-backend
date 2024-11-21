@@ -8,7 +8,8 @@
     "start": "node index.js",
     "dev": "nodemon index.js",
     "build:ui": "@powershell Remove-Item -Recurse -Force dist && cd ../persons-frontend && npm run build && @powershell Copy-Item dist -Recurse ../persons-backend",
-    "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push"
+    "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push",
+    "lint": "eslint ."
   },
   "author": "",
   "license": "ISC",
@@ -20,6 +21,10 @@
     "persons-backend": "file:"
   },
   "devDependencies": {
+    "@eslint/js": "^9.15.0",
+    "@stylistic/eslint-plugin-js": "^2.11.0",
+    "eslint": "^9.15.0",
+    "globals": "^15.12.0",
     "morgan": "^1.10.0",
     "nodemon": "^3.1.7"
   }
